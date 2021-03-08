@@ -8,7 +8,7 @@ info:
   title: Classify tweets from Twitter
   contact:
     email: stanik@informatik.uni-hamburg.de
-host: feed-uvl.ifi.uni-heidelberg.de
+host: 129.206.78.96:9655
 basePath: /ri-analytics-classification-twitter
 schemes:
 - https

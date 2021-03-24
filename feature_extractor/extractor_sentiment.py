@@ -25,7 +25,8 @@ class ExtractorSentiment:
         # communicate via stdin the string to be rated. Note that all spaces are replaced with +
         stdout_text, stderr_text = p.communicate(bytearray(text.replace(' ', '+'), 'utf8'))
         p.kill()
-
+        print(stdout_text)
+        print(raw_sentiment)
         raw_sentiment = str(stdout_text, 'utf-8').split()
         score_pos = int(raw_sentiment[0])
         score_neg = int(raw_sentiment[1])

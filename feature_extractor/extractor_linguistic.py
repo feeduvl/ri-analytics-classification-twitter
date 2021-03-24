@@ -36,7 +36,8 @@ class ExtractorLinguistic:
                 'PROPN': 0,
                 'NUM': 0,
                 'DET': 0,
-                'AUX': 0
+                'AUX': 0,
+                'SCONJ' : 0
             }
 
             tense_dict = {
@@ -81,6 +82,7 @@ class ExtractorLinguistic:
                 tweet_dict['n_pos_propn'] = pos_dict['PROPN']
                 tweet_dict['n_pos_num'] = pos_dict['NUM']
                 tweet_dict['n_pos_det'] = pos_dict['DET']
+                tweet_dict['n_pos_sconj'] = pos_dict['SCONJ']
             elif feature == 'word_counts':
                 tweet_dict['n_words'] = len(tweet['text'].split())
             elif feature == 'stopword_counts':

@@ -76,13 +76,11 @@ class ExtractorLinguistic:
                 tweet_dict['n_pos_punct'] = pos_dict['PUNCT']
                 tweet_dict['n_pos_x'] = pos_dict['X']
                 tweet_dict['n_pos_verb'] = pos_dict['VERB']
-                tweet_dict['n_pos_aux'] = pos_dict['AUX']
                 tweet_dict['n_pos_adp'] = pos_dict['ADP']
                 tweet_dict['n_pos_adv'] = pos_dict['ADV']
                 tweet_dict['n_pos_propn'] = pos_dict['PROPN']
                 tweet_dict['n_pos_num'] = pos_dict['NUM']
                 tweet_dict['n_pos_det'] = pos_dict['DET']
-                tweet_dict['n_pos_sconj'] = pos_dict['SCONJ']
             elif feature == 'word_counts':
                 tweet_dict['n_words'] = len(tweet['text'].split())
             elif feature == 'stopword_counts':

@@ -35,7 +35,8 @@ class ExtractorLinguistic:
                 'ADV': 0,
                 'PROPN': 0,
                 'NUM': 0,
-                'DET': 0
+                'DET': 0,
+                'AUX': 0
             }
 
             tense_dict = {
@@ -76,6 +77,7 @@ class ExtractorLinguistic:
                 tweet_dict['n_pos_punct'] = pos_dict['PUNCT']
                 tweet_dict['n_pos_x'] = pos_dict['X']
                 tweet_dict['n_pos_verb'] = pos_dict['VERB']
+                tweet_dict['n_pos_verb'] = pos_dict['AUX']
                 tweet_dict['n_pos_adp'] = pos_dict['ADP']
                 tweet_dict['n_pos_adv'] = pos_dict['ADV']
                 tweet_dict['n_pos_propn'] = pos_dict['PROPN']

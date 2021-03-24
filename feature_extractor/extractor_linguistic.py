@@ -47,6 +47,8 @@ class ExtractorLinguistic:
             for word in nlp(tweet['text']):
                 # n_pos features
                 pos = word.pos_
+                print("This is just a test and pos is:")
+                print(pos)
                 pos_dict[pos] = pos_dict[pos] + 1
                 # n_stopwords
                 if word.is_stop:
